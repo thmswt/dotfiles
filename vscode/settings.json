@@ -1,0 +1,38 @@
+{
+    "files.associations": {
+        "**/dbt_project/**/*.yaml": "jinja-yaml",
+        "**/dbt_project/**/*.yml": "jinja-yaml",
+        "**/dbt_project/**/*.sql": "jinja-sql",
+        "**/dbt_project/**/docs/**/*.md": "jinja-md",
+        // optional: don't format models in `target/` dir
+        "**/target/**": ""
+    },
+    "editor.formatOnSave": true,
+    "editor.largeFileOptimizations": false,
+    "editor.quickSuggestions": {
+        "strings": true
+    },
+    "editor.wordWrap": "on",
+    "diagramspreviewer.pythonCommand": "VS Code Python Interpreter",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "gitlens.autolinks": [],
+    "gitlens.defaultDateLocale": "de-DE",
+    "gitlens.defaultDateFormat": "YYYY-MM-DD, hh:mm:ss",
+    "gitlens.defaultDateShortFormat": "YY-MM-DD",
+    "gitlens.sortBranchesBy": "name:asc",
+    "gitlens.views.branches.files.compact": false,
+    "[jinja-sql]": {
+        "editor.defaultFormatter": "dorzey.vscode-sqlfluff"
+    },
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "redhat.telemetry.enabled": false,
+    "sqlfluff.config": ".github/linters/.sqlfluff",
+    "sqlfluff.dialect": "bigquery",
+    "vsicons.dontShowNewVersionMessage": true,
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.startupEditor": "none"
+}

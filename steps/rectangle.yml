@@ -1,0 +1,9 @@
+---
+
+- clean: ['~']
+
+# TODO check if link works as expected or create: true is necessary
+- link:
+  "~/Library/Preferences/com.knollsoft.Rectangle.plist":
+    path: Rectangle/settings/com.knollsoft.Rectangle.plist
+    force: true
