@@ -76,7 +76,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Plugin management
 
-ZPLUG_HOME='/opt/homebrew/opt/zplug'
+ZPLUG_HOME='/usr/local/opt/zplug'
 export ZPLUG_HOME
 source "$HOME/.zplugrc"
 
