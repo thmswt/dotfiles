@@ -11,6 +11,7 @@ brew "python@3.12"
 # Distributed revision control system
 brew "git"
 # Tool to build, change, and version infrastructure
+tap "hashicorp/tap"
 brew "hashicorp/tap/terraform"
 # Kubernetes package manager
 brew "helm"
