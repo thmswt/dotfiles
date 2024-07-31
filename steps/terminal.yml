@@ -2,9 +2,12 @@
 
 - clean: ['~']
 
-- link:
-  "~/iTerm2/settings/com.googlecode.iterm2.plist":
-    path: iTerm2/settings/com.googlecode.iterm2.plist
+# See https://ohmyz.sh
+- shell:
+  - command: sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" || true
+    description: Install Oh-My-Zsh
+    stdout: true
+    stderr: true
 
 - shell:
   - command: |
@@ -18,28 +21,23 @@
     stdout: true
     stderr: true
 
-# See https://ohmyz.sh
-- shell:
-  - command: |
-      sh -c \
-        "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-      || true
-    description: Install Oh-My-Zsh
-    stdout: true
-    stderr: true
-
 - link:
-  # Terminal:
-  ~/.shell:
-    path: shell
-    create: true
+  # iTerm2
+  "~/iTerm2/settings/com.googlecode.iterm2.plist":
+    path: iTerm2/settings/com.googlecode.iterm2.plist
+  
+  # Terminal
   ~/.bash_profile: config/bash_profile
   ~/.bashrc: config/bashrc
   ~/.zshrc:
     path: config/zshrc
     force: true
+  ~/.zplugrc:
+    path: config/zplugrc
+    force: true
+    
 
-  # Git:
+  # Git
   ~/.gitconfig: config/gitconfig
   ~/.gitignore_global: config/gitignore
   ~/.gitattributes_global: config/gitattributes

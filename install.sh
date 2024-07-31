@@ -31,7 +31,7 @@ run_dotbot () {
     -c "$config" $ARGS
 }
 
-run_dotbot 'steps/terminal.yml' || true
 run_dotbot 'steps/dependencies.yml' || true
+run_dotbot 'steps/terminal.yml' || true
 run_dotbot 'steps/vscode.yml' || true
-run_dotbot 'steps/rectangle.yml' || true
+# run_dotbot 'steps/rectangle.yml' || true
