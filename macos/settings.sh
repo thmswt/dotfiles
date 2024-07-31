@@ -21,17 +21,8 @@ osascript -e 'tell application "System Preferences" to quit'
 
 # === General ===
 
-# Hide remaining battery time; show percentage
-defaults write com.apple.menuextra.battery ShowPercent -string "YES"
-defaults write com.apple.menuextra.battery ShowTime -string "NO"
-
 # Disable startup noise:
 sudo nvram SystemAudioVolume=%01
-
-# TODO check when applying on macbook
-# Always use expanded save dialog:
-# defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
-# defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 
 # Maximize windows on double clicking them:
 defaults write -g AppleActionOnDoubleClick 'Maximize'
@@ -41,29 +32,21 @@ defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 
+# === Appearance ===
+
+defaults write NSGlobalDomain AppleInterfaceStyle -string "Dark"
+
+
 # === Dock ===
+
+# Do not show suggested and recent apps in Dock
+defaults write com.apple.dock show-recents -int 0
 
 # Size:
 defaults write com.apple.dock tilesize -int 48
 
 # Show indicator lights for open apps in Dock:
 defaults write com.apple.dock show-process-indicators -bool true
-
-# TODO check when applying on macbook
-# Show Dock instantly:
-# defaults write com.apple.dock autohide-delay -float 0
-
-# TODO check when applying on macbook
-# Automatically hide and show the Dock
-# defaults write com.apple.dock autohide -bool true
-
-
-# === Menu bar ===
-
-# Make status icons smaller, so they will take less space:
-# https://flaky.build/built-in-workaround-for-applications-hiding-under-the-macbook-pro-notch
-# defaults write -globalDomain NSStatusItemSelectionPadding -int 12
-# defaults write -globalDomain NSStatusItemSpacing -int 12
 
 
 # === Finder ===
@@ -101,20 +84,10 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 	Privileges -bool true
 
 
-# === Safari ===
+# === Mouse ===
 
-# Privacy: don’t send search queries to Apple
-defaults write com.apple.Safari UniversalSearchEnabled -bool false
-defaults write com.apple.Safari SuppressSearchSuggestions -bool true
-
-# Improve Safari security
-defaults write com.apple.Safari \
-  com.apple.Safari.ContentPageGroupIdentifier.WebKit2JavaEnabled \
-  -bool false
-defaults write com.apple.Safari \
-  com.apple.Safari.ContentPageGroupIdentifier.WebKit2JavaEnabledForLocalFiles \
-  -bool false
-
+# Disable natural scrolling
+defaults write NSGlobalDomain com.apple.swipescrolldirection -int 0
 
 # === Activity monitor ===
 
