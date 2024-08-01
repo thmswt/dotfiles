@@ -22,22 +22,22 @@
     stderr: true
 
 - link:
-  # iTerm2
-  "~/iTerm2/settings/com.googlecode.iterm2.plist":
-    path: iTerm2/settings/com.googlecode.iterm2.plist
-  
-  # Terminal
-  ~/.bash_profile: config/bash_profile
-  ~/.bashrc: config/bashrc
-  ~/.zshrc:
-    path: config/zshrc
-    force: true
-  ~/.zplugrc:
-    path: config/zplugrc
-    force: true
+    # iTerm2
+    "~/iTerm2/settings/com.googlecode.iterm2.plist":
+      path: iTerm2/settings/com.googlecode.iterm2.plist
+      create: true
     
+    # Terminal
+    ~/.bash_profile: config/bash_profile
+    ~/.bashrc: config/bashrc
+    ~/.zshrc:
+      path: config/zshrc
+      force: true
+    ~/.zplugrc:
+      path: config/zplugrc
+      force: true
 
-  # Git
-  ~/.gitconfig: config/gitconfig
-  ~/.gitignore_global: config/gitignore
-  ~/.gitattributes_global: config/gitattributes
+    # Git
+    ~/.gitconfig: config/gitconfig
+    ~/.gitignore_global: config/gitignore
+    ~/.gitattributes_global: config/gitattributes
