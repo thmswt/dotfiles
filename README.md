@@ -3,8 +3,8 @@
 
 ## Prerequisites
 
-1. Homebrew, run: [`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`](https://brew.sh/)
-2. git, run: [`brew install git`](https://git-scm.com/download/mac)
+1. [Homebrew](https://brew.sh/), run: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+2. [git](https://git-scm.com/download/mac), run: `brew install git`
 
 
 ## Local configuration
@@ -23,13 +23,13 @@ To set things up, [`dotbot`](https://github.com/anishathalye/dotbot/) is used. S
 
 1. Clone this repo with: `git clone https://github.com/thmswt/dotfiles`
 2. `cd dotfiles/`
-3. Run: [`bash ./install.sh`](https://github.com/thmswt/dotfiles/blob/master/install.sh)
+3. Run: [`bash ./install.sh`](https://github.com/thmswt/dotfiles/blob/main/install.sh)
 
 
 ## Configuration
 
-1. Import the [config file]((https://github.com/thmswt/dotfiles/blob/master/config/RectangleConfig.json)) into Rectangle.
-2. (Optionally) Run [`bash macos/settings.sh`]((https://github.com/thmswt/dotfiles/blob/master/macos/settings.sh)) if you want to configure your macOS.
+1. Import the [config file](https://github.com/thmswt/dotfiles/blob/main/config/RectangleConfig.json) into Rectangle.
+2. (Optionally) Run [`bash macos/settings.sh`](https://github.com/thmswt/dotfiles/blob/main/macos/settings.sh) if you want to configure your macOS.
 
 
 ## License
