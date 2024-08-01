@@ -48,6 +48,12 @@ defaults write com.apple.dock tilesize -int 48
 # Show indicator lights for open apps in Dock:
 defaults write com.apple.dock show-process-indicators -bool true
 
+# Disable Stage Manager
+defaults write com.apple.WindowManager GloballyEnabled -bool false
+
+# Set "Click wallpaper to reveal desktop" to "Only in Stage Manager"
+defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
+
 
 # === Finder ===
 
@@ -88,6 +94,7 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 
 # Disable natural scrolling
 defaults write NSGlobalDomain com.apple.swipescrolldirection -int 0
+
 
 # === Activity monitor ===
 
