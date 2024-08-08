@@ -48,6 +48,9 @@ defaults write com.apple.dock tilesize -int 48
 # Show indicator lights for open apps in Dock:
 defaults write com.apple.dock show-process-indicators -bool true
 
+# Minimise windows into application icon
+defaults write com.apple.dock minimize-to-application -int 1
+
 # Disable Stage Manager
 defaults write com.apple.WindowManager GloballyEnabled -bool false
 
