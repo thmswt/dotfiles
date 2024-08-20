@@ -71,6 +71,8 @@ vscode "ms-vscode-remote.remote-containers"
 vscode "tehpeng.diagramspreviewer"
 # Makes it easy to create, manage, and debug containerized applications.
 vscode "ms-azuretools.vscode-docker"
+# Improve highlighting of errors, warnings and other language diagnostics.
+vscode "usernamehw.errorlens"
 # Gemini Code Assist + Tools for Google Cloud
 vscode "googlecloudtools.cloudcode"
 # GitHub Actions workflows and runs for github.com hosted repositories in VS Code
