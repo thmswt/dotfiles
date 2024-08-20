@@ -24,6 +24,7 @@ To set things up, [`dotbot`](https://github.com/anishathalye/dotbot/) is used. S
 1. Clone this repo with: `git clone https://github.com/thmswt/dotfiles`
 2. `cd dotfiles/`
 3. Run: [`bash ./install.sh`](https://github.com/thmswt/dotfiles/blob/main/install.sh)
+4. The LogiTune cask only downloads the app, to install it run: `open /opt/homebrew/Caskroom/logitune/3.6.255/LogiTuneInstaller.app`
 
 
 ## Post Configuration
