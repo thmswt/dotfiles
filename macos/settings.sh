@@ -31,10 +31,25 @@ defaults write -g AppleActionOnDoubleClick 'Maximize'
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
+# === Lock Screen ===
+
+# Disable screen saver
+defaults -currentHost write com.apple.screensaver idleTime -int 0
+
+# Set timer to turn off display on battery
+sudo pmset -b displaysleep 5
+
+# Set time to turn off display on power adapter
+sudo pmset -c displaysleep 0
+
 
 # === Appearance ===
 
+# Enable Dark mode
 defaults write NSGlobalDomain AppleInterfaceStyle -string "Dark"
+
+# Show battery percentage
+defaults write com.apple.controlcenter "BatteryShowPercentage" -bool true
 
 
 # === Dock ===
@@ -93,10 +108,12 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 	Privileges -bool true
 
 
-# === Mouse ===
+# === Trackpad ===
 
 # Disable natural scrolling
-defaults write NSGlobalDomain com.apple.swipescrolldirection -int 0
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerHorizSwipeGesture -int 1
+defaults write NSGlobalDomain AppleEnableSwipeNavigateWithScrolls -int 0
 
 
 # === Activity monitor ===
