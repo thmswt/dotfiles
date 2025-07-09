@@ -27,6 +27,8 @@ brew "sqlfluff"
 brew "yamllint"
 # Static checker for GitHub Actions workflow files
 brew "actionlint"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
 # Programmable completion for Bash 3.2
 brew "bash-completion"
 # Easily download, build, install, upgrade, and uninstall Python packages
