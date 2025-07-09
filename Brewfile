@@ -1,5 +1,3 @@
-# Bundler for non-Ruby dependencies from Homebrew, Homebrew Cask, Mac App Store, Whalebrew and Visual Studio Code.
-tap "homebrew/bundle"
 # Command-line tool for upgrading every outdated app installed by Homebrew Cask
 tap "buo/cask-upgrade"
 # Mac App Store command-line interface
@@ -61,6 +59,8 @@ cask "displaylink"
 cask "logitune"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# OpenAI's official ChatGPT desktop app
+cask "chatgpt"
 # Improve your code commenting by annotating with alert, informational, TODOs, and more!
 vscode "aaron-bond.better-comments"
 # Syntax highlighting for jinja(2) including HTML, Markdown, YAML, Ruby and LaTeX templates
