@@ -8,6 +8,8 @@ brew "node"
 brew "python@3.12"
 # Distributed revision control system
 brew "git"
+# GitHub command-line tool
+brew "gh"
 # Tool to build, change, and version infrastructure
 tap "hashicorp/tap"
 brew "hashicorp/tap/terraform"
