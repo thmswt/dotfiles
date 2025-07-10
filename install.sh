@@ -34,4 +34,5 @@ run_dotbot () {
 run_dotbot 'steps/dependencies.yml' || true
 run_dotbot 'steps/terminal.yml' || true
 run_dotbot 'steps/vscode.yml' || true
+run_dotbot 'steps/gcloud.yml' || true
 # run_dotbot 'steps/rectangle.yml' || true

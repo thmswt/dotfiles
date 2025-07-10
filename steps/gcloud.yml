@@ -1,0 +1,18 @@
+---
+
+- clean: ['~']
+
+# See https://cloud.google.com/sdk/docs/install
+- shell:
+  - command: |
+      # Initialize gcloud CLI (non-interactive fallback)
+      if [ ! -f ~/.config/gcloud/configurations/config_default ]; then
+        echo "Initializing gcloud (you may be prompted interactively)..."
+        gcloud init || echo "Manual login may be required after setup."
+      else
+        echo "gcloud already initialized."
+      fi
+    description: Initialize gcloud CLI (if not already initialized)
+    stdout: true
+    stderr: true
+
