@@ -34,5 +34,21 @@
     "sqlfluff.dialect": "bigquery",
     "vsicons.dontShowNewVersionMessage": true,
     "workbench.iconTheme": "vscode-icons",
-    "workbench.startupEditor": "none"
+    "workbench.startupEditor": "none",
+    "python.createEnvironment.trigger": "off",
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        },
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "ruff.configuration": ".github/linters/.ruff.toml"
 }
