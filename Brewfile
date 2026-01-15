@@ -33,6 +33,8 @@ brew "uv"
 brew "bash-completion"
 # Easily download, build, install, upgrade, and uninstall Python packages
 brew "python-setuptools"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
 # Free and Open Source messaging and emailing app
 cask "rambox"
 # Password manager that keeps all passwords secure behind one password
