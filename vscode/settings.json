@@ -36,6 +36,9 @@
     "workbench.iconTheme": "vscode-icons",
     "workbench.startupEditor": "none",
     "python.createEnvironment.trigger": "off",
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    "python.terminal.activateEnvironment": true,
+    "python.terminal.activateEnvInCurrentTerminal": true,
     "[dockercompose]": {
         "editor.insertSpaces": true,
         "editor.tabSize": 2,
@@ -50,5 +53,6 @@
     "[github-actions-workflow]": {
         "editor.defaultFormatter": "redhat.vscode-yaml"
     },
-    "ruff.configuration": ".github/linters/.ruff.toml"
+    "ruff.configuration": ".github/linters/.ruff.toml",
+    "comments.openView": "never",
 }
