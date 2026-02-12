@@ -66,6 +66,8 @@ cask "iterm2"
 # OpenAI's official ChatGPT desktop app
 cask "chatgpt"
 # Improve your code commenting by annotating with alert, informational, TODOs, and more!
+cask "bruno"
+# Open source IDE for exploring and testing APIs
 vscode "aaron-bond.better-comments"
 # Syntax highlighting for jinja(2) including HTML, Markdown, YAML, Ruby and LaTeX templates
 vscode "samuelcolvin.jinjahtml"
