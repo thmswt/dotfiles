@@ -1,32 +1,31 @@
 ---
-
-- clean: ['~']
+- clean: ["~"]
 
 # See https://ohmyz.sh
 - shell:
-  - command: sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" || true
-    description: Install Oh-My-Zsh
-    stdout: true
-    stderr: true
+    - command: sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" || true
+      description: Install Oh-My-Zsh
+      stdout: true
+      stderr: true
 
 - shell:
-  - command: |
-      defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/iTerm2/settings" 
-    description: Specify the preferences directory
-    stdout: true
-    stderr: true
-  - command: |
-      defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
-    description: Tell iTerm2 to use the custom preferences in the directory
-    stdout: true
-    stderr: true
+    - command: |
+        defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/iTerm2/settings"
+      description: Specify the preferences directory
+      stdout: true
+      stderr: true
+    - command: |
+        defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
+      description: Tell iTerm2 to use the custom preferences in the directory
+      stdout: true
+      stderr: true
 
 - link:
     # iTerm2
     "~/iTerm2/settings/com.googlecode.iterm2.plist":
       path: iTerm2/settings/com.googlecode.iterm2.plist
       create: true
-    
+
     # Terminal
     ~/.bash_profile: config/bash_profile
     ~/.bashrc: config/bashrc
@@ -35,6 +34,9 @@
       force: true
     ~/.zplugrc:
       path: config/zplugrc
+      force: true
+    ~/atomic_mod.json:
+      path: oh-my-posh/atomic_mod.json
       force: true
 
     # Git

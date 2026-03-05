@@ -36,6 +36,8 @@ brew "python-setuptools"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Free and Open Source messaging and emailing app
+brew "oh-my-posh"
+# Prompt theme engine for any shell
 cask "rambox"
 # Password manager that keeps all passwords secure behind one password
 cask "1Password"

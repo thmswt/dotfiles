@@ -5,7 +5,8 @@
         "**/dbt_project/**/*.sql": "jinja-sql",
         "**/dbt_project/**/docs/**/*.md": "jinja-md",
         // optional: don't format models in `target/` dir
-        "**/target/**": ""
+        "**/target/**": "",
+        "justfile": "makefile"
     },
     "editor.formatOnSave": true,
     "editor.largeFileOptimizations": false,
@@ -36,7 +37,7 @@
     "workbench.iconTheme": "vscode-icons",
     "workbench.startupEditor": "none",
     "python.createEnvironment.trigger": "off",
-    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    "python.defaultInterpreterPath": "",
     "python.terminal.activateEnvironment": true,
     "python.terminal.activateEnvInCurrentTerminal": true,
     "[dockercompose]": {
@@ -55,4 +56,5 @@
     },
     "ruff.configuration": ".github/linters/.ruff.toml",
     "comments.openView": "never",
+    "editor.fontFamily": "MesloLGL Nerd Font Mono",
 }
