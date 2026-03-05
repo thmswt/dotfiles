@@ -5,32 +5,28 @@
 
 1. [Homebrew](https://brew.sh/), run: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 2. [git](https://git-scm.com/download/mac), run: `brew install git`
-
-
-## Pre Configuration
-
-Some of the tools used require local configuration. Like `git` with username and email:
-
-1. Run `touch ~/.gitconfig_local` to create the file. 
-2. Store any user-specific data.
-
-You find a simple example of this file [here](https://github.com/thmswt/dotfiles/blob/main/config/gitconfig_local).
+3. [just](https://github.com/casey/just), run: `brew install just`
 
 
 ## Installation
 
-To set things up, [`dotbot`](https://github.com/anishathalye/dotbot/) is used. Steps:
-
 1. Clone this repo with: `git clone https://github.com/thmswt/dotfiles`
 2. `cd dotfiles/`
-3. Run: [`bash ./install.sh`](https://github.com/thmswt/dotfiles/blob/main/install.sh)
-4. The LogiTune cask only downloads the app, to install it run: `open /opt/homebrew/Caskroom/logitune/3.6.255/LogiTuneInstaller.app`
+3. Run: `just setup`
 
+This will automatically:
+1. Create a `~/.gitconfig_local` file (remember to add your user-specific git config there, see [example](https://github.com/thmswt/dotfiles/blob/main/config/gitconfig_local)).
+2. Run the main installation script (`./install.sh`) via [`dotbot`](https://github.com/anishathalye/dotbot/).
+3. Install LogiTune (finding the correct installer version).
+4. Provide instructions for Rectangle configuration.
 
-## Post Configuration
+To also apply macOS settings (optional), run:
+`just macos`
 
-1. Import the [config file](https://github.com/thmswt/dotfiles/blob/main/config/RectangleConfig.json) into Rectangle.
-2. (Optionally) Run [`bash macos/settings.sh`](https://github.com/thmswt/dotfiles/blob/main/macos/settings.sh) if you want to configure your macOS.
+Or run everything including macOS settings with:
+`just full-setup`
+
+Alternatively, you can run individual steps using `just <recipe>`. See available recipes with `just --list`.
 
 
 ## License
