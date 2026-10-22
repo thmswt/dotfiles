@@ -35,9 +35,11 @@ brew "bash-completion"
 brew "python-setuptools"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
-# Free and Open Source messaging and emailing app
-brew "oh-my-posh"
 # Prompt theme engine for any shell
+brew "oh-my-posh"
+# Feature-rich interactive Jira CLI
+brew "jira-cli"
+# Free and Open Source messaging and emailing app
 cask "rambox"
 # Password manager that keeps all passwords secure behind one password
 cask "1Password"
@@ -67,9 +69,9 @@ cask "logitune"
 cask "iterm2"
 # OpenAI's official ChatGPT desktop app
 cask "chatgpt"
-# Improve your code commenting by annotating with alert, informational, TODOs, and more!
-cask "bruno"
 # Open source IDE for exploring and testing APIs
+cask "bruno"
+# Improve your code commenting by annotating with alert, informational, TODOs, and more!
 vscode "aaron-bond.better-comments"
 # Syntax highlighting for jinja(2) including HTML, Markdown, YAML, Ruby and LaTeX templates
 vscode "samuelcolvin.jinjahtml"
