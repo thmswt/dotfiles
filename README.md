@@ -31,4 +31,4 @@ Alternatively, you can run individual steps using `just <recipe>`. See available
 
 ## License
 
-[WTFPL](https://en.wikipedia.org/wiki/WTFPL): do the fuck you want. Enjoy!
+Released under the [Zero-Clause BSD License](LICENSE) (0BSD): use it however you like, no attribution required.
