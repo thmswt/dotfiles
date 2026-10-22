@@ -57,4 +57,16 @@
     "ruff.configuration": ".github/linters/.ruff.toml",
     "comments.openView": "never",
     "editor.fontFamily": "MesloLGL Nerd Font Mono",
+    "chat.disableAIFeatures": true,
+    "google.cloud.region": "europe-west3",
+    "workbench.externalBrowser": "chrome",
+    "workbench.browser.openLocalhostLinks": false,
+    "yaml.disableSchemaDetection": [
+        "**/.github/workflows/*.yml",
+        "**/.github/workflows/*.yaml",
+        "**/.gitea/workflows/*.yml",
+        "**/.gitea/workflows/*.yaml",
+        "**/.forgejo/workflows/*.yml",
+        "**/.forgejo/workflows/*.yaml"
+    ]
 }
