@@ -59,8 +59,6 @@ cask "visual-studio-code"
 cask "gcloud-cli"
 # App to build and share containerised applications and microservices
 cask "docker-desktop"
-# Trains AIs to understand and translate texts
-cask "deepl"
 # Music streaming service
 cask "spotify"
 # Collaboration platform for API development
