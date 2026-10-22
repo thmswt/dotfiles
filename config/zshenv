@@ -1,0 +1,5 @@
+# uv
+export PATH="$HOME/.local/bin:$PATH"
+
+# rustup
+[ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"

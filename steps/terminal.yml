@@ -29,6 +29,9 @@
     # Terminal
     ~/.bash_profile: config/bash_profile
     ~/.bashrc: config/bashrc
+    ~/.zshenv:
+      path: config/zshenv
+      force: true
     ~/.zshrc:
       path: config/zshrc
       force: true
