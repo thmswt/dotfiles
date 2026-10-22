@@ -42,7 +42,7 @@ brew "jira-cli"
 # Free and Open Source messaging and emailing app
 cask "rambox"
 # Password manager that keeps all passwords secure behind one password
-cask "1Password"
+cask "1password"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
 # Web browser
@@ -50,9 +50,9 @@ cask "google-chrome"
 # Open-source code editor
 cask "visual-studio-code"
 # Set of tools to manage resources and applications hosted on Google Cloud
-cask "google-cloud-sdk"
+cask "gcloud-cli"
 # App to build and share containerised applications and microservices
-cask "docker"
+cask "docker-desktop"
 # Trains AIs to understand and translate texts
 cask "deepl"
 # Music streaming service
