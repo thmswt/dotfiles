@@ -39,6 +39,12 @@ brew "tree"
 brew "oh-my-posh"
 # Feature-rich interactive Jira CLI
 brew "jira-cli"
+# Handy way to save and run project-specific commands
+brew "just"
+# Modern and pretty fancy file manager for the terminal
+brew "superfile"
+# Rust toolchain installer
+brew "rustup"
 # Free and Open Source messaging and emailing app
 cask "rambox"
 # Password manager that keeps all passwords secure behind one password
@@ -81,6 +87,8 @@ vscode "scott-blair.copy-breadcrumbs"
 vscode "ms-vscode-remote.remote-containers"
 # Translate the code into diagrams
 vscode "tehpeng.diagramspreviewer"
+# Create, edit and preview Mermaid diagrams
+vscode "mermaidchart.vscode-mermaid-chart"
 # Makes it easy to create, manage, and debug containerized applications.
 vscode "ms-azuretools.vscode-docker"
 # Improve highlighting of errors, warnings and other language diagnostics.
@@ -97,6 +105,8 @@ vscode "hashicorp.hcl"
 vscode "hashicorp.terraform"
 # Jupyter notebook support, interactive programming and computing that supports Intellisense, debugging and more.
 vscode "ms-toolsai.jupyter"
+# Data viewing, cleaning and preparation for tabular datasets
+vscode "ms-toolsai.datawrangler"
 # Develop, deploy and debug Kubernetes applications
 vscode "ms-kubernetes-tools.vscode-kubernetes-tools"
 # All you need to write Markdown (keyboard shortcuts, table of contents, auto preview and more)
@@ -113,8 +123,8 @@ vscode "ms-python.python"
 vscode "mechatroner.rainbow-csv"
 # A Visual Studio Code extension with support for the Ruff linter.
 vscode "charliermarsh.ruff"
-# A linter and auto-formatter for SQLfluff, a popular linting tool for SQL and dbt.
-vscode "dorzey.vscode-sqlfluff"
+# Official SQLFluff linter and formatter extension
+vscode "sqlfluff.vscode-sqlfluff"
 # VSCode Snippet Package for jinja and dbt
 vscode "bastienboutonnet.vscode-dbt"
 # Icons for Visual Studio Code
