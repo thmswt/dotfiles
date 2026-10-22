@@ -6,4 +6,4 @@
 # global:
 PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
 export PATH
-. "$HOME/.cargo/env"
+[ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
